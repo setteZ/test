@@ -8,7 +8,9 @@ basic.forever(function () {
     telecomando = irRemote.returnIrButton()
     if (telecomando == irRemote.irButton(IrButton.Right)) {
         basic.showIcon(IconNames.Happy)
+        music.ringTone(523)
     } else {
         basic.showIcon(IconNames.Sad)
+        music.ringTone(262)
     }
 })
